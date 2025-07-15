@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First_responsive</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Je ne créer pas de class header car j'affecte le header directement depuis le css -->
+         <div class="headerBox">
+            <!-- Création d'une class headerBox, pour aligner mon h1 et ma nav j'ai du créer une div
+             avec cette class pour les mettre dans la même box -->
+             <h1>Logo</h1>
+             <!-- J'affecte directement mon h1 via le css sans créer de class -->
+                 <nav>
+                     <ul>
+                         <li>
+                    <!-- j'affecte mes Li diréctement via le css pour enlever les points, j'ai également crée 
+                     une class white_txt pour écrire en blanc et noLine pour enlever les soulignements -->
+                             <a class="white_txt noLine" href="">Accueil</a>
+                         </li>
+                         <li>
+                             <a class="white_txt noLine" href="">Exemple</a>
+                         </li>
+                         <li>
+                             <a class="white_txt noLine" href="">Contact</a>
+                         </li>
+                     </ul>
+                 </nav>
+            </div>
+    </header>
+    <main>
+        <!-- J'ai affecté mon main via le css avec un padding left et right ainsi qu'un backgroundcolor -->
+        <h2>Cartes responsives</h2>
+        <!-- Tout comme mon main, le h2 est directement affecté via le css avec un padding pour créer
+         de l'espace entre les différentes section-->
+        <section class="cardContainer">
+            <!-- Création d'une class cardContainer, me permet de créer une grosse box qui va contenir mes
+             autres box qui sont les cartes, avec les attributs display flex et flex-wrap: wrap -->
+            <div class="cardBox"> Carte 1 </div>
+            <!-- Création de class cardBox pour créer des flex box dans mon cardContainer -->
+            <div class="cardBox"> Carte 2 </div>
+            <div class="cardBox"> Carte 3 </div>
+            <div class="cardBox"> Carte 4 </div>
+        </section>
+        <section class="imageContainer">
+            <!-- Création de class imageContainer avec une largeur (width) avec l'unité vw -->
+            <h2>Image responsive</h2>
+            <div class="imageBox">
+                <!-- Création de class imageBox, une box qui aura pour but d'avoir mon image dedans -->
+                <img src="/assets/img/600x300.png" alt="image avec écrit dessus 600x300" class="imgResponsive">
+                <!-- Création d'une class imgResponsive, permet d'appliquer le responsive sur l'image -->
+            </div>
+        </section>
+        <section>
+            <h2>Deux colonnes flexibles</h2>
+            <div class="columnContainer">
+                <!-- Création de class columnContainer elle contiendra les 2 autres box, je l'affecte dans une
+                 div et non dans la section sinon le titre est également affecté et donc pas le 
+                 résultat voulu -->
+                <div class="columnBox"> Colonne A </div>
+                <div class="columnBox"> Colonne B </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <!-- J'affecte directement mon footer via le css sans création de class -->
+     <section class="flex">
+        <!-- création de class flex pour que mes 2 box en dessous s'allignent -->
+        <div class="footerBox white_txt">
+            <!-- création de class footerbox avec un padding et une witdh pour gérer la taille des box
+             également un gap de 3em pour créer un espace entre les 2 écrits -->
+                © 2025 Simple Responsive
+        </div>
+        <div class="footerBox white_txt">
+            Flexbox & Unités seulement
+        </div>
+    </section>
+    </footer>
+</body>
+</html>

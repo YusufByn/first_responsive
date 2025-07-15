@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+}
+header{
+    background-color: rgb(102, 126, 234);
+    width: 100%;
+}
+.headerBox{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: auto;
+    padding: 60px;
+}
+h1{
+    display: flex;
+    justify-content: flex-start;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 90px;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+li:hover{
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
+
+.noLine{
+    list-style-type: none;
+    text-decoration: none;
+ }
+
+.white_txt{
+    color: aliceblue;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    display: flex;
+}
+
+main{
+    background-color: rgb(247, 247, 247);
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.cardContainer{
+    flex-wrap: wrap;
+    width: 90%;
+    padding: auto;
+    display: flex;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+}
+
+.cardBox{
+    width: 10%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+.imageContainer{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 40%;
+}
+
+.imageBox{
+    width: 70%;
+    height: auto;
+    padding-left: 15%;
+}
+.columnContainer{
+    display: flex;
+    width: 90%;
+    padding: auto;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.columnBox{
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+footer{
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.footerBox{
+    gap: 3em;
+    padding: 60px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgResponsive{
+  max-width: 100%;
+  height: auto;
+}
