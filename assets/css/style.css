@@ -87,6 +87,10 @@ main{
     height: auto;
     padding-left: 15%;
 }
+
+img{
+    border-radius: 30px;
+}
 .columnContainer{
     display: flex;
     width: 90%;
